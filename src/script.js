@@ -14,15 +14,15 @@ function mostrarCiudad(ciudad){
 }
 
  
- let boton= document.querySelector("button");
- boton.addEventListener("click", function(){
-     let input = document.querySelector("input");
-     let ciudad = input.value;
+ const $boton= document.querySelector("button");
+ $boton.addEventListener("click", function(){
+     const $input = document.querySelector("input");
+     const ciudad = $input.value;
  
      if(ciudad. trim() === ""){
          alert("No ingresaste ningún valor.")
      } else {
-     input.value = "";
+     $input.value = "";
      mostrarCiudad(ciudad);    
      }
  
