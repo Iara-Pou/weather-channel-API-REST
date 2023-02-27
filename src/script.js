@@ -10,17 +10,18 @@ function mostrarCiudad(ciudad){
          document.querySelector("#descripcion").textContent = respuesta.weather[0].description;
          document.querySelector(".container").style.visibility = "visible";
     })
-     .catch( respuesta => {alert(`Disculpá, no hayamos la ciudad ${ciudad}.`)})
+     .catch( respuesta => {mostrarError(`Disculpá, no hayamos la ciudad ${ciudad}.`)})
 }
 
  
  const $boton= document.querySelector("button");
  $boton.addEventListener("click", function(){
      const $input = document.querySelector("input");
+function mostrarError(texto){
+}
      const ciudad = $input.value;
- 
      if(ciudad. trim() === ""){
-         alert("No ingresaste ningún valor.")
+        mostrarError("No ingresaste ningún valor.")
      } else {
      $input.value = "";
      mostrarCiudad(ciudad);    
