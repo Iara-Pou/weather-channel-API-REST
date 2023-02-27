@@ -13,12 +13,11 @@ function mostrarCiudad(ciudad){
      .catch( respuesta => {mostrarError(`Disculpá, no hayamos la ciudad ${ciudad}.`)})
 }
 
- 
- const $boton= document.querySelector("button");
- $boton.addEventListener("click", function(){
-     const $input = document.querySelector("input");
 function mostrarError(texto){
 }
+
+function manejarInputCiudad(){
+    const $input = document.querySelector("input");
      const ciudad = $input.value;
      if(ciudad. trim() === ""){
         mostrarError("No ingresaste ningún valor.")
@@ -26,9 +25,9 @@ function mostrarError(texto){
      $input.value = "";
      mostrarCiudad(ciudad);    
      }
+}
+ const $boton= document.querySelector("button");
+ $boton.addEventListener("click", manejarInputCiudad);
  
      //Agregá una validación para que le muestre un alert al usuario si ingresa el nombre de una ciudad inexistente. Si la ciudad es inexistente, la API devolverá un Error 404. 🔍 Para aprender más, usá tus habilidades de developer y googleá la solución .fail.
-  
- }
- )
  
