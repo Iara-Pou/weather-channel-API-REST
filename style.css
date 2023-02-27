@@ -50,7 +50,6 @@ button:hover {
     height: 350px;
     border-radius: 20px;
     margin-left: 50px;
-    visibility : hidden;
     margin: 50px auto;
 }
 
@@ -85,4 +84,7 @@ img {
 
 .encabezado {
     text-align: center;
+}
+.oculto{
+display:none;
 }

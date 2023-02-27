@@ -8,7 +8,7 @@ function mostrarCiudad(ciudad){
          document.querySelector("#grados").innerHTML = "<sup>°C</sup>";
          document.querySelector("#wicon").src=`http://openweathermap.org/img/wn/${respuesta.weather[0].icon}@2x.png`;         
          document.querySelector("#descripcion").textContent = respuesta.weather[0].description;
-         document.querySelector(".container").style.visibility = "visible";
+         document.querySelector(".container").classList.remove("oculto");
     })
      .catch( respuesta => {mostrarError(`Disculpá, no hayamos la ciudad ${ciudad}.`)})
 }
