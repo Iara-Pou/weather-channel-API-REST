@@ -12,21 +12,68 @@
 </head>
 
 <body>
-    <div class="encabezado">
+    <header class="encabezado">
         <h1>Weather Channel</h1>
-        <input type="text" placeholder="Ingresá una ciudad">
-        <button>ENVIAR</button>
-    </div>
-    <div class="container oculto">
-        <ul class="ciudades">
-            <li>
-                <span id="ciudad"></span><br>
-                <span id="temperatura"></span><span id="grados"></span><br>
-                <img id="wicon" src="" alt="Ícono del tiempo"><br>
-                <span id="descripcion"></span><br>
-            </li>
-        </ul>
-    </div>
+    </header>
+    <section class="buscador">
+        <span>
+            <input type="text" placeholder="Ingresá una ciudad">
+            <button>ENVIAR</button>
+        </span>
+    </section>
+    <section class="apartado_clima">
+        <div class="clima_hoy">
+            <h3> Clima de hoy en
+                <span class="ciudad"></span>
+            </h3>
+            <ul>
+                <li id="temperatura"> <span id="grados"></span>°</li>
+                <li id="wicon" src="" alt="Ícono del tiempo"></li>
+                <li id="descripcion"></li>
+            </ul>
+        </div>
+        <div class="clima_semana">
+            <h3>Clima en la semana en <span class="ciudad"></span></h3>
+            <div class="contenedor_clima_semana">
+                <div class="dia_clima" id="dia-1">
+                    <p class="titulo_dia">Lunes:</p>
+                    <p>Minima:</p>
+                    <p>Maxima:</p>
+                </div>
+                <div class="dia_clima" id="dia-2">
+                    <p class="titulo_dia">Martes:</p>
+                    <p class="minima">Minima:</p>
+                    <p class="maxima">Maxima:</p>
+                </div>
+                <div class="dia_clima" id="dia-3">
+                    <p class="titulo_dia">Miercoles:</p>
+                    <p class="minima">Minima:</p>
+                    <p class="maxima">Maxima:</p>
+                </div>
+                <div class="dia_clima" id="dia-4">
+                    <p class="titulo_dia">Jueves:</p>
+                    <p class="minima">Minima:</p>
+                    <p class="maxima">Maxima:</p>
+                </div>
+                <div class="dia_clima" id="dia-5">
+                    <p class="titulo_dia">Viernes:</p>
+                    <p class="minima">Minima:</p>
+                    <p class="maxima">Maxima:</p>
+                </div>
+                <div class="dia_clima" id="dia-6">
+                    <p class="titulo_dia">Sabado:</p>
+                    <p class="minima">Minima:</p>
+                    <p class="maxima">Maxima:</p>
+                </div>
+                <div class="dia_clima" id="dia-7">
+                    <p class="titulo_dia">Domingo:</p>
+                    <p class="minima">Minima:</p>
+                    <p class="maxima">Maxima:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="./src/script.js"></script>
 </body>
 
