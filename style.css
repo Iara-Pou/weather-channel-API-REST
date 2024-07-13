@@ -1,0 +1,117 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background: #0a1f44;
+  color: white;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 4rem;
+  letter-spacing: 0.02em;
+}
+
+button,
+input {
+  border: none;
+  background: none;
+  outline: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  font-size: 2rem;
+  height: 40px;
+  padding: 5px 5px 10px;
+  border-bottom: 1px solid;
+}
+
+button {
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  padding: 15px 20px;
+  margin-left: 15px;
+  border-radius: 5px;
+  background: #ff1e42;
+}
+
+button:hover {
+  background: #c3112d;
+}
+
+.buscador {
+  display: flex;
+  flex-direction: row; /* Aseguramos que sea una fila */
+  justify-content: center; /* Centramos horizontalmente */
+}
+
+.clima_hoy {
+  background-color: white;
+  color: #1e2432;
+  width: 50%;
+  height: 350px;
+  border-radius: 20px;
+  margin-left: 50px;
+  margin: 50px auto;
+}
+
+#ciudad {
+  font-size: 2rem;
+  color: #717681;
+}
+
+.clima_semana,
+.clima_hoy {
+  padding: 3em;
+}
+
+.contenedor_clima_semana {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+}
+
+.dia_clima {
+  padding: 1em;
+  border: 2px solid white;
+  background-color: rgb(255, 255, 255, 20%);
+  border-radius: 10px;
+}
+
+.titulo_dia {
+  text-decoration: wavy;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+#temperatura {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+sup {
+  font-weight: normal;
+  font-size: 2.5rem;
+}
+
+img {
+  width: 4rem;
+}
+
+#descripcion {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #717681;
+}
+
+.encabezado {
+  text-align: center;
+}
+.oculto {
+  display: none;
+}
